@@ -22,8 +22,8 @@ import (
 	"math"
 	"reflect"
 
-	"github.com/blevesearch/bleve/v2/size"
 	"github.com/golang/protobuf/proto"
+	"github.com/knights-analytics/indexer/size"
 )
 
 var reflectStaticSizeTermFrequencyRow int
@@ -1029,7 +1029,7 @@ func visitBackIndexRow(data []byte, callback backIndexFieldTermVisitor) error {
 				return io.ErrUnexpectedEOF
 			}
 			// don't track unrecognized data
-			//m.XXX_unrecognized = append(m.XXX_unrecognized, data[iNdEx:iNdEx+skippy]...)
+			// m.XXX_unrecognized = append(m.XXX_unrecognized, data[iNdEx:iNdEx+skippy]...)
 			iNdEx += skippy
 		}
 	}
@@ -1109,7 +1109,7 @@ func visitBackIndexRowFieldTerms(data []byte, callback backIndexFieldTermVisitor
 			if postIndex > l {
 				return io.ErrUnexpectedEOF
 			}
-			//m.Terms = append(m.Terms, string(data[iNdEx:postIndex]))
+			// m.Terms = append(m.Terms, string(data[iNdEx:postIndex]))
 			callback(theField, data[iNdEx:postIndex])
 			iNdEx = postIndex
 		default:
@@ -1132,7 +1132,7 @@ func visitBackIndexRowFieldTerms(data []byte, callback backIndexFieldTermVisitor
 			if (iNdEx + skippy) > l {
 				return io.ErrUnexpectedEOF
 			}
-			//m.XXX_unrecognized = append(m.XXX_unrecognized, data[iNdEx:iNdEx+skippy]...)
+			// m.XXX_unrecognized = append(m.XXX_unrecognized, data[iNdEx:iNdEx+skippy]...)
 			iNdEx += skippy
 		}
 	}
