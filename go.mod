@@ -1,6 +1,6 @@
 module github.com/blevesearch/bleve/v2
 
-go 1.21
+go 1.22
 
 require (
 	github.com/RoaringBitmap/roaring/v2 v2.4.5
@@ -10,7 +10,7 @@ require (
 	github.com/blevesearch/go-faiss v1.0.24
 	github.com/blevesearch/go-metrics v0.0.0-20201227073835-cf1acfcdf475
 	github.com/blevesearch/go-porterstemmer v1.0.3
-	github.com/blevesearch/goleveldb v1.0.1
+	github.com/blevesearch/goleveldb v1.1.0
 	github.com/blevesearch/gtreap v0.1.1
 	github.com/blevesearch/scorch_segment_api/v2 v2.3.4
 	github.com/blevesearch/segment v0.9.1
@@ -35,11 +35,14 @@ require (
 require (
 	github.com/blevesearch/mmap-go v1.0.4 // indirect
 	github.com/couchbase/ghistogram v0.1.0 // indirect
-	github.com/golang/geo v0.0.0-20210211234256-740aa86cb551 // indirect
+	github.com/golang/geo v0.0.0-20230421003525-6adc56603217 // indirect
 	github.com/golang/snappy v0.0.4 // indirect
 	github.com/inconshreveable/mousetrap v1.1.0 // indirect
-	github.com/json-iterator/go v0.0.0-20171115153421-f7279a603ede // indirect
+	github.com/json-iterator/go v1.1.12 // indirect
+	github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd // indirect
+	github.com/modern-go/reflect2 v1.0.2 // indirect
 	github.com/mschoch/smat v0.2.0 // indirect
-	github.com/spf13/pflag v1.0.5 // indirect
-	golang.org/x/sys v0.13.0 // indirect
+	github.com/spf13/pflag v1.0.6 // indirect
+	golang.org/x/sys v0.30.0 // indirect
+	google.golang.org/protobuf v1.36.5 // indirect
 )
