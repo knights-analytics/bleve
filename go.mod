@@ -1,10 +1,10 @@
-module github.com/blevesearch/bleve/v2
+module github.com/knights-analytics/indexer
 
-go 1.22
+go 1.24
 
 require (
 	github.com/RoaringBitmap/roaring/v2 v2.4.5
-	github.com/bits-and-blooms/bitset v1.12.0
+	github.com/bits-and-blooms/bitset v1.21.0
 	github.com/blevesearch/bleve_index_api v1.2.2
 	github.com/blevesearch/geo v0.1.20
 	github.com/blevesearch/go-faiss v1.0.24
@@ -25,11 +25,11 @@ require (
 	github.com/blevesearch/zapx/v14 v14.4.1
 	github.com/blevesearch/zapx/v15 v15.4.1
 	github.com/blevesearch/zapx/v16 v16.2.2-0.20250225163414-355d2eb8f241
-	github.com/couchbase/moss v0.2.0
-	github.com/golang/protobuf v1.3.2
-	github.com/spf13/cobra v1.7.0
-	go.etcd.io/bbolt v1.3.7
-	golang.org/x/text v0.8.0
+	github.com/couchbase/moss v0.3.0
+	github.com/golang/protobuf v1.5.4
+	github.com/spf13/cobra v1.9.1
+	go.etcd.io/bbolt v1.4.0
+	golang.org/x/text v0.22.0
 )
 
 require (
